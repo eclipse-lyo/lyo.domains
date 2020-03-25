@@ -384,6 +384,10 @@
     <resourceProperties title="refine" name="refine" occurs="zeroOrMany" valueType="Resource"/>
     <resourceProperties title="satisfy" name="satisfy" occurs="zeroOrMany" valueType="Resource"/>
     <resourceProperties title="trace" name="trace" occurs="zeroOrMany" valueType="Resource"/>
+    <configuration xsi:type="oslc4j_ai:MavenSpecificationConfiguration">
+      <generalConfiguration filesBasePath="" javaBasePackageName="org.eclipse.lyo.oslc.domains.jazz_am"/>
+      <projectConfiguration xsi:type="oslc4j_ai:MavenProjectConfiguration" doNotGenerateProjectConfigurationFiles="true" lyoVersion="4.0.0-SNAPSHOT" groupId="jazz-architecture-management-" artifactId="jazz-architecture-management-" version="0.0.1-SNAPSHOT"/>
+    </configuration>
   </domainSpecifications>
   <domainPrefixes name="dcterms"/>
   <domainPrefixes name="foaf"/>
