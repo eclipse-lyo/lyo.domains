@@ -309,8 +309,8 @@
     </resourceProperties>
     <generationSetting javaClassPackageName="org.eclipse.lyo.oslc.domains.qm" javaFilesPath=""/>
   </domainSpecifications>
-  <domainSpecifications name="Architecture Management" namespaceURI="http://open-services.net/ns/am#" namespacePrefix="//@domainPrefixes[name='oslc_am']">
-    <resources name="Resource" resourceProperties="//@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='contributor'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='created'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='creator'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='description'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='identifier'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='modified'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='source'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='title'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='type'] //@domainSpecifications[name='OSLC']/@resourceProperties[name='instanceShape'] //@domainSpecifications[name='OSLC']/@resourceProperties[name='serviceProvider'] //@domainSpecifications[name='OSLC']/@resourceProperties[name='shortTitle']"/>
+  <domainSpecifications name="Architecture Management" namespaceURI="http://open-services.net/ns/core/am#" namespacePrefix="//@domainPrefixes[name='oslc_am']">
+    <resources name="Resource" resourceProperties="//@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='contributor'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='created'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='creator'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='description'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='identifier'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='modified'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='source'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='title'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='type'] //@domainSpecifications[name='OSLC']/@resourceProperties[name='instanceShape'] //@domainSpecifications[name='OSLC']/@resourceProperties[name='serviceProvider'] //@domainSpecifications[name='OSLC']/@resourceProperties[name='shortTitle'] //@domainSpecifications[name='Jazz%20Architecture%20Management']/@resourceProperties[name='trace'] //@domainSpecifications[name='Jazz%20Architecture%20Management']/@resourceProperties[name='elaborates'] //@domainSpecifications[name='Jazz%20Architecture%20Management']/@resourceProperties[name='external'] //@domainSpecifications[name='Jazz%20Architecture%20Management']/@resourceProperties[name='refine'] //@domainSpecifications[name='Jazz%20Architecture%20Management']/@resourceProperties[name='satisfy'] //@domainSpecifications[name='Jazz%20Architecture%20Management']/@resourceProperties[name='derives']"/>
     <resources name="LinkType" resourceProperties="//@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='contributor'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='created'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='creator'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='identifier'] //@domainSpecifications[name='Dublin%20Core']/@resourceProperties[name='modified'] //@domainSpecifications[name='OSLC']/@resourceProperties[name='instanceShape'] //@domainSpecifications[name='OSLC']/@resourceProperties[name='serviceProvider'] //@domainSpecifications[name='RDFS']/@resourceProperties[name='comment'] //@domainSpecifications[name='RDFS']/@resourceProperties[name='label']"/>
     <generationSetting javaClassPackageName="org.eclipse.lyo.oslc.domains.am" javaFilesPath=""/>
   </domainSpecifications>
@@ -350,6 +350,14 @@
     <resourceProperties name="reportsOnAutomationPlan" valueType="Resource" representation="reference" range="//@domainSpecifications[name='Automation']/@resources[name='AutomationPlan']" description="Automation Plan which the Automation Result reports on. It is likely that the target resource will be an oslc_auto:AutomationPlan but that is not necessarily the case."/>
     <generationSetting javaClassPackageName="org.eclipse.lyo.oslc.domains.auto" javaFilesPath=""/>
   </domainSpecifications>
+  <domainSpecifications name="Jazz Architecture Management" namespaceURI="http://jazz.net/ns/dm/linktypes#" namespacePrefix="//@domainPrefixes[name='jazz_am']">
+    <resourceProperties title="elaborates" name="elaborates" occurs="zeroOrMany" valueType="Resource"/>
+    <resourceProperties title="derives" name="derives" occurs="zeroOrMany" valueType="Resource"/>
+    <resourceProperties title="trace" name="trace" occurs="zeroOrMany" valueType="Resource"/>
+    <resourceProperties title="external" name="external" occurs="zeroOrMany" valueType="Resource"/>
+    <resourceProperties title="refine" name="refine" occurs="zeroOrMany" valueType="Resource"/>
+    <resourceProperties title="satisfy" name="satisfy" occurs="zeroOrMany" valueType="Resource"/>
+  </domainSpecifications>
   <domainPrefixes name="dcterms"/>
   <domainPrefixes name="foaf"/>
   <domainPrefixes name="rdf"/>
@@ -363,5 +371,6 @@
   <domainPrefixes name="oslc_config"/>
   <domainPrefixes name="prov"/>
   <domainPrefixes name="oslc_auto"/>
+  <domainPrefixes name="jazz_am"/>
   <generationSetting javaClassPackageName="org.eclipse.lyo.oslc.domains" javaFilesPath="/src/main/java"/>
 </oslc4j_ai:Specification>
