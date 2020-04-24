@@ -34,11 +34,12 @@ import org.eclipse.lyo.oslc4j.core.model.Link;
 import org.eclipse.lyo.oslc4j.core.model.OslcConstants;
 import org.eclipse.lyo.oslc4j.core.model.ValueType;
 
+/**
+ * @see org.eclipse.lyo.oslc.domains.qm.TestScript
+ */
+@Deprecated
 @OslcResourceShape(title = "Quality Management Resource Shape", describes = QmConstants.TYPE_TEST_SCRIPT)
 @OslcNamespace(QmConstants.QUALITY_MANAGEMENT_NAMESPACE)
-/**
- * @see http://open-services.net/bin/view/Main/QmSpecificationV2#Resource_TestScript
- */
 public final class TestScript
        extends QmResource
 {

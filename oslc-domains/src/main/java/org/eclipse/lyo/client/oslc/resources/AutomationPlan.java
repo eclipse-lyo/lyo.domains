@@ -37,6 +37,10 @@ import org.eclipse.lyo.oslc4j.core.model.Occurs;
 import org.eclipse.lyo.oslc4j.core.model.OslcConstants;
 import org.eclipse.lyo.oslc4j.core.model.ValueType;
 
+/**
+ * @see org.eclipse.lyo.oslc.domains.auto.AutomationPlan
+ */
+@Deprecated
 @OslcResourceShape(title = "Automation Plan Resource Shape", describes = AutomationConstants.TYPE_AUTOMATION_PLAN)
 @OslcNamespace(AutomationConstants.AUTOMATION_NAMESPACE)
 /**

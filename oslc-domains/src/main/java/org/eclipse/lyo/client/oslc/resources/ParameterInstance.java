@@ -34,6 +34,10 @@ import org.eclipse.lyo.oslc4j.core.model.Occurs;
 import org.eclipse.lyo.oslc4j.core.model.OslcConstants;
 import org.eclipse.lyo.oslc4j.core.model.ValueType;
 
+/**
+ * @see org.eclipse.lyo.oslc.domains.auto.ParameterInstance
+ */
+@Deprecated
 @OslcResourceShape(title = "Parameter Instance Resource Shape", describes = AutomationConstants.TYPE_PARAMETER_INSTANCE)
 @OslcNamespace(AutomationConstants.AUTOMATION_NAMESPACE)
 /**
